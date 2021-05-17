@@ -1,0 +1,149 @@
+@use 'src/styles/vars';
+
+.game {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 15px;
+  height: 67%;
+
+  &-list__dark {
+    margin: 10px 0;
+    width: 30%;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+  
+    &::-webkit-scrollbar-track {
+      background-color: vars.$color-dark;
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      background-color: white;
+      outline: none
+    }
+  }  
+
+  &-list {
+    margin: 10px 0;
+    width: 30%;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+  
+    &::-webkit-scrollbar-track {
+      background-color: lightgrey;
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      background-color: vars.$color-main;
+      outline: none
+    }
+    
+    &--item {
+      font-weight: bold;
+      padding: 5px;
+
+      &__dark {
+        color: white;
+      }
+    }
+
+    &--item:hover {
+      background-color: vars.$color-main;
+      color: vars.$color-light;
+      cursor: pointer;
+    }
+
+    &--item__dark:hover {
+      background-color: white;
+      color: vars.$color-dark;
+    }
+
+    }
+
+    &-cards__dark {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: 15px;
+      box-sizing: border-box;
+      height: 100%;
+      width: 70%;
+      overflow-y: scroll;
+
+      &::-webkit-scrollbar {
+        width: 5px;
+      }
+  
+      &::-webkit-scrollbar-track {
+        background-color: vars.$color-dark;
+      }
+  
+      &::-webkit-scrollbar-thumb {
+        background-color: white;
+        outline: none
+      }
+    }
+
+  &-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 15px;
+    box-sizing: border-box;
+    height: 100%;
+    width: 70%;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: lightgrey;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: vars.$color-main;
+      outline: none
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 310px;
+      width: 200px;
+      margin-bottom: 1rem;
+      border: dashed 2px lightgrey;
+      border-radius: 8px;
+      padding-top: 1rem;
+      padding-bottom: 0.5rem;
+    }
+
+    &__dark {
+      color: white;
+    }
+  }
+
+}
+
+h3 {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 7px;
+}
+
+img {
+  max-height: 90%;
+  max-width: 90%;
+  display: block;
+  margin: auto auto;
+}

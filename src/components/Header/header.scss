@@ -1,0 +1,21 @@
+@use 'src/styles/vars';
+
+h1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 2rem;
+  color: vars.$color-main;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Press Start 2P', sans-serif;
+  padding-bottom: 2rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.dark {
+  color: white;
+}

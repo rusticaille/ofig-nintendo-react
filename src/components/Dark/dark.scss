@@ -1,0 +1,18 @@
+@use 'src/styles/vars';
+
+.darkmode-button {
+  position: relative;
+  top: 3rem; 
+  left: 5%;
+  height: 1.3rem;
+  background-color: vars.$color-main;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+
+  &__dark {
+    background-color: white;
+    color: vars.$color-dark;
+  }
+}

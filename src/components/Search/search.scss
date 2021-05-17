@@ -1,0 +1,48 @@
+@use 'src/styles/vars';
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 500px;
+  margin: 0 auto;
+}
+.form {
+  width: 300px;
+  margin: 0 auto;
+  border-bottom: 2px solid vars.$color-main;
+
+  &__dark {
+    border-bottom: 2px solid white;
+  }
+  &-item {
+    width: 300px;
+    border: none;
+    height: 1rem;
+    font-family: 'Press Start 2P', sans-serif;
+    text-align: center;
+    margin-bottom: 15px;
+    }
+
+    &__dark {
+      background-color: vars.$color-dark;
+      color:white;
+    }
+}
+
+input[name=search] {
+  background-color: vars.$color-dark;
+}
+
+.list-button {
+  background-color: vars.$color-main;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+
+  &__dark {
+    background-color: white;
+    color: vars.$color-dark;
+  }
+}
